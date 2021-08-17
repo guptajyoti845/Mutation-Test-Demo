@@ -65,11 +65,19 @@
                     </targetTests>
                     <timestampedReports>false</timestampedReports>
                     <mutators>
+                        <mutator>CONSTRUCTOR_CALLS</mutator>
+                        <mutator>NON_VOID_METHOD_CALLS</mutator>
+                        <mutator>CONDITIONALS_BOUNDARY</mutator>
                         <mutator>INCREMENTS</mutator>
+                        <mutator>INVERT_NEGS</mutator>
                         <mutator>MATH</mutator>
                         <mutator>NEGATE_CONDITIONALS</mutator>
-                        <mutator>INVERT_NEGS</mutator>
-                        <mutator>CONDITIONALS_BOUNDARY</mutator>
+                        <mutator>RETURN_VALS</mutator>
+                        <mutator>VOID_METHOD_CALLS</mutator>
+                        <mutator>CONSTRUCTOR_CALLS</mutator>
+                        <mutator>INLINE_CONSTS</mutator>
+                        <mutator>NON_VOID_METHOD_CALLS</mutator>
+                        <mutator>REMOVE_CONDITIONALS</mutator>
                     </mutators>
 
                 </configuration>
