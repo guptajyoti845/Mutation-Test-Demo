@@ -12,8 +12,8 @@ public class MatchmakerTest {
     Matchmaker agent = new Matchmaker();
 
     @Test
-    public void test21YearOldMale() {
-        assertTrue(agent.isEligibleForMarriage(21, MALE));
+    public void test22YearOldMale() {
+        assertTrue(agent.isEligibleForMarriage(22, MALE));
     }
 
     @Test
@@ -21,19 +21,13 @@ public class MatchmakerTest {
         assertTrue(agent.isEligibleForMarriage(19, FEMALE));
     }
     @Test
-    public void testAllMales() {
-        assertFalse(agent.isEligibleForMarriage(17, MALE));
-        assertFalse(agent.isEligibleForMarriage(18, MALE));
-        assertFalse(agent.isEligibleForMarriage(19, MALE));
+    public void testAllConditions() {
         assertFalse(agent.isEligibleForMarriage(20, MALE));
         assertTrue(agent.isEligibleForMarriage(21, MALE));
         assertTrue(agent.isEligibleForMarriage(22, MALE));
         assertFalse(agent.isEligibleForMarriage(17, FEMALE));
         assertTrue(agent.isEligibleForMarriage(18, FEMALE));
         assertTrue(agent.isEligibleForMarriage(19, FEMALE));
-        assertTrue(agent.isEligibleForMarriage(20, FEMALE));
-        assertTrue(agent.isEligibleForMarriage(21, FEMALE));
-        assertTrue(agent.isEligibleForMarriage(22, FEMALE));
         assertFalse(agent.isEligibleForMarriage(17, null));
         assertFalse(agent.isEligibleForMarriage(18, null));
         assertFalse(agent.isEligibleForMarriage(20, null));
