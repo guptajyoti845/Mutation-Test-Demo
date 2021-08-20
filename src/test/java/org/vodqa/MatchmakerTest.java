@@ -11,8 +11,8 @@ public class MatchmakerTest {
     Matchmaker agent = new Matchmaker();
 
     @Test
-    public void test21YearOldMale() {
-        assertTrue(agent.isEligibleForMarriage(21, MALE));
+    public void test22YearOldMale() {
+        assertTrue(agent.isEligibleForMarriage(22, MALE));
     }
 
     @Test
